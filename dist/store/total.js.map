@@ -1,0 +1,1 @@
+{"version":3,"file":"total.js","sourceRoot":"","sources":["../../src/store/total.ts"],"names":[],"mappings":";;AAAA,mCAAqC;AAOxB,QAAA,KAAK,GAAG,CAAC,KAAK,GAAG,oBAAY,CAAC,KAAK,EAAE,MAAc,EAAE,EAAE;IAChE,QAAQ,MAAM,CAAC,IAAI,EAAE;QAEjB,KAAK,WAAW;YACZ,OAAO,MAAM,CAAC,KAAK,CAAC;QACxB;YACI,OAAO,KAAK,CAAC;KACpB;AACL,CAAC,CAAA"}

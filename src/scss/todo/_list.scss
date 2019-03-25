@@ -1,0 +1,50 @@
+&-list {
+        margin-bottom: 2em; 
+        &__item {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 1em;
+            &:nth-child(odd) {
+                background: $_color-grey--lightest;
+            }
+        }
+        &__username {
+            color: $_color-grey--dark;
+            padding: 0.125em 0.5em;
+            border-radius: 3em;
+            background-color: $_color-yellow;
+        }
+        &__email {
+            font-size: 0.85em;
+            color: $_color-grey;
+        }
+        &__desc {
+            margin-top: 0.5em;
+            width: 100%;
+            position: relative;
+        }
+        &__title {
+            width: 100%;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding-left: 1.25em;
+        }
+        &__checkbox {
+            position: absolute;
+            z-index: 2;
+            top: 0.5em;
+            left: 0;
+            font-size: 0.75em;
+            width: 1.5em;
+            height: 1.5em;
+            line-height: 1.5em;
+            font-weight: bold;
+            color: $_color-blue;
+            text-align: center;
+            border-radius: 5px;
+            background: $_color-blue--faded;
+            cursor: pointer;
+        }
+    }

@@ -1,0 +1,122 @@
+    
+    &-app {
+        padding: 2em;
+        max-width: 500px;
+        margin: auto; 
+    }
+    &-content {
+        position: relative;
+        z-index: 2;
+        padding: 2em;
+        background: $_color-white;
+        box-shadow: 0 0px 50px -12px rgba(0, 0, 0, 0.125);
+    }
+    
+    &__button {
+        padding: 0.75em 1.5em;
+        border: 1px solid $_color-grey--light;
+        border-radius: 8px;
+        font-size: 1em;
+        line-height: 1.2;
+        cursor: pointer;
+        background: $_color-grey--lightest;
+        color: $_color-grey--dark;
+        &--primary {
+            background-color: $_color-blue;
+            color: $_color-white;
+            border-color: $_color-blue;
+        }
+        &--secondary {
+            background-color: $_color-red;
+            color: $_color-white;
+            border-color: $_color-red;
+        }
+        &--disabled {
+            cursor: not-allowed;
+            background: $_color-grey--light;
+        }
+        &--circle {
+            border-radius: 50em;
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+            font-size: 1em;
+            padding: 0;
+        }
+        &--bald {
+            background: none;
+            border-color: transparent;
+        }
+    }
+    &__message {
+        position: relative;
+        width: auto;
+        height: auto;
+        padding: 0.75em 1.5em 0.75em 3.5em; 
+        box-shadow: 0px 2px 7px rgba(0,0,0,0.15);
+        border-radius: 2em;
+        background: $_color-white;
+        font-size: 1em;
+        margin-left: 2em;
+ 
+        &--warning {
+            background: $_color-red;
+            color: $_color-white;
+            font-weight: bold;
+            .todo__message-icon {
+                color: $_color-white;
+            }
+        }
+        &-wrap {
+            position: fixed;
+            top: 1em;
+            left: 0;
+            display: flex;
+            align-self: center;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        &-icon {
+            position: absolute;
+            top: 0.125em;
+            left: 0.4em;
+            width: 1.5em;
+            font-size: 1.75em;
+            color: $_color-blue;
+        }
+    }
+    &__text-message {
+        font-size: 1em;
+        &--warning {
+            color: $_color-red;
+            font-weight: bold;
+        }
+    }
+    &__input {
+        border-radius: 10px;
+        background: $_color-grey--faded;
+        border: 1px solid $_color-grey--faded;
+        padding: 0.75em 1.5em;
+        line-height: 1.2;
+        box-sizing: border-box;
+        font-size: 1em;
+        outline: none;
+        &--error {
+            border-color: $_color-red;
+        }
+    }
+    &-counter {
+        text-align: center;
+        margin-top: 1em;
+    }
+    &-sorter {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 1em;
+        > * {
+            margin-left: 1em;
+        }
+    }

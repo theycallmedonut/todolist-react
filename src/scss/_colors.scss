@@ -1,0 +1,14 @@
+$_color-grey--faded: fade_out(#000, 0.95);
+$_color-grey--lightest: #f7f9ff;
+$_color-grey--light: #ddd;
+$_color-grey--dark: #777;
+$_color-grey: #999;
+$_color-white: #fff;
+$_color-red: rgba(180,28,28, 0.75);
+$_color-green: #2B8513;
+$_color-green--faded: rgba(65,200,29,0.4);
+$_color-red--faded: fade_out($_color-red, 0.25);
+$_color-blue: rgb(73,174,219);
+$_color-blue--faded: rgba(73,174,219, 0.2);
+$_color-yellow: rgb(247,195,7);
+$_color-yellow--faded: fade_out($_color-yellow, 0.25);

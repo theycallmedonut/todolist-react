@@ -1,0 +1,80 @@
+&-login {
+        margin: 1em -1em;
+        position: absolute;
+        top: 0em;
+        right: 2em;
+        width: 20em;
+        z-index: 2;
+        text-align: right;
+        &__form {    
+            border-radius: 0.5em;
+            padding: 1em;
+            background:$_color-white;
+            box-shadow: 0 0 40px rgba(0,0,0,0.25); 
+            text-align: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 300px;
+            input {
+                display: block;
+                width: 100%;
+                margin-bottom: 0.5em;
+            }
+        }
+        &__footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+            font-size: 1em;
+            .loading_spinner-wrap {
+                padding: 0.75em 1em 0 0;
+            }
+        }
+        &__message {
+            @extend .todo__text-message; 
+            @extend .todo__text-message--warning;
+            font-size: 0.875em;
+            padding: 0.5em 1em 0.5em 0;
+        }
+        &__button {
+            @extend .todo__button;
+            display: inline-block;
+            vertical-align: middle;
+            &--bald {
+                @extend .todo__button--bald;
+                padding: 0;
+                font-size: 1.5em;
+            }
+            &--close {
+                @extend .todo__button;
+                @extend .todo__button--secondary;
+                @extend .todo__button--circle;
+                position: absolute;
+                top: -0.5em;
+                right: -0.5em;
+                z-index: 2;
+                font-size: 1em;
+            }
+            >* {
+                font-size: 1.5em;
+            }
+        }
+        &__userinfo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1em;
+            text-align: right;
+            b {
+                font-size: 1.125em;
+                line-height: 1; 
+                font-weight: normal;
+            }
+            p {
+                font-size: 0.875em;
+                margin: 0;
+                color: $_color-grey;
+            }
+        }
+    }

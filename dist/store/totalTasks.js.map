@@ -1,0 +1,1 @@
+{"version":3,"file":"totalTasks.js","sourceRoot":"","sources":["../../src/store/totalTasks.ts"],"names":[],"mappings":";;AAKa,QAAA,UAAU,GAAG,CAAC,KAAK,GAAG,CAAC,EAAE,MAAmB,EAAE,EAAE;IACzD,QAAQ,MAAM,CAAC,IAAI,EAAE;QAEjB,KAAK,iBAAiB;YAClB,OAAO,MAAM,CAAC,UAAU,CAAC;QAC7B;YACI,OAAO,KAAK,CAAC;KACpB;AACL,CAAC,CAAA"}

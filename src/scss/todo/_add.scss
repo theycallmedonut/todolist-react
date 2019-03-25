@@ -1,0 +1,32 @@
+&-add {
+        text-align: right;
+        position: relative;
+        z-index: 1;
+        padding: 1em 0 1em 1em;
+        width: auto;
+        border-radius: 3px 3px 0 0;
+        &__input {
+            max-width: 170px;
+            &:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            &:last-of-type {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+        &__button {
+            @extend .todo__button;
+            @extend .todo__button--primary;
+            margin-left: -1em;
+        }
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &__message {
+            @extend .todo__text-message;
+            @extend .todo__text-message--warning;
+        } 
+    }
